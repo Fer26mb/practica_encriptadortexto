@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Practica encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Title -->
+<div class="title">
+    <h1>Practica encriptador de texto</h1>
+</div>
+<div class="container">
+    <div class="input-container">
+        <!-- Text input area -->
+        <div class="input-area">
+            <label for="input"></label>
+            <textarea id="input" rows="11" cols="50" placeholder="Ingrese el texto aqui"></textarea>
+            <!-- Allowed characters info (🛈 Sólo letras minúsculas y sin acentos) -->
+            <p class="allowed-chars">🛈 Sólo letras minúsculas y sin acentos</p>
+        </div>
+        <!-- Buttons -->
+        <div class="encrypt-decrypt-buttons">
+            <!-- Encrypt button -->
+            <button class="encrypt-button" id="encrypt" onclick="encrypt()"> Encriptar</button>
+            <!-- Decrypt button -->
+            <button class="decrypt-button" id="decrypt" onclick="decrypt()"> Desencriptar</button>
+        </div>
+    </div>
+    <div class="output-container">
+        <!-- Output area -->
+        <div class="output-area">
+            <div id="no-message">
+                <img id="not-found" src="img/not-found.svg" alt="Not found">
+                <p id="no-encrypted">Ningún mensaje fue encontrado</p>
+                <p id="no-encrypted-subtext">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <label for="output"></label>
+            <textarea id="output" style="display: none;"></textarea>
+            <button class="copy-button" id="copy" onclick="copy()" style="display: none">Copiar</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>Hecho con ❤️ por <a href="https://github.com/fer26mb">Fer</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
